@@ -6,7 +6,8 @@
  "engine": "InnoDB",
  "field_order": [
   "api_key",
-  "company"
+  "company",
+  "parent_account"
  ],
  "fields": [
   {
@@ -18,13 +19,19 @@
    "fieldname": "company",
    "fieldtype": "Data",
    "label": "Company"
+  },
+  {
+   "fieldname": "parent_account",
+   "fieldtype": "Link",
+   "label": "Parent Account",
+   "options": "Account"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-04-25 11:04:42.067526",
+ "modified": "2025-04-26 09:59:54.474066",
  "modified_by": "Administrator",
  "module": "mercury_integration",
  "name": "Mercury Settings",

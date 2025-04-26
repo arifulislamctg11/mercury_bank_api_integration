@@ -63,7 +63,10 @@ def create_or_update_bank_account(acc_data, company_name):
         
         bank_account_id = f"Mercury-{acc_data['id']}"
         account_name = f"{acc_data['nickname']} - {acc_data['accountNumber'][-4:]}"
-        parent_account = "Bank Accounts - MSB"
+        
+        settings = get_mercury_settings()
+        print(settings.parent_account)
+        parent_account = settings.parent_account  
         
         # 1. Create Account in Chart of Accounts
         if not frappe.db.exists("Account", {"account_name": account_name, "company": company_name}):
