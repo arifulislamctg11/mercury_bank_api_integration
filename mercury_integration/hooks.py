@@ -242,3 +242,8 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# scheduler_events = {
+#     "weekly": [
+#         "mercury_integration.api.sync_mercury_accounts"
+#     ]
+# }
